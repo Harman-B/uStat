@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
     <h1>Personal Dashboard</h1>
@@ -38,18 +39,42 @@
 
       </div>
       <div id="projects">
-        <!-- list projects currently working on -->
+        <!-- fetch list projects currently working on -->
       </div>
       <div id="codenvy">
-
+        <a href="https://codenvy.com/">Codenvy</a>
       </div>
-      <div id="todos" class="container">
+      <div id="todos" class="container dragable">
+        <h2 class="divHeader">Todos</h2>
         <ul>
-          <li></li>
-          <li></li>
+          <li>migrate this project to angular</li>
+          <li>start learning database</li>
           <li></li>
         </ul>
       </div>
+      <div class="database">
+        <h2>Databases</h2>
+        <ul>
+          <li>SQL
+            <ul>
+              <li>MySQL</li>
+            </ul>
+          </li>
+          <li>NoSQL
+            <ul>
+              <li>Cassandra</li>
+              <li>MongoDB</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="people">
+        <h2>Influencers</h2>
+        <ul>
+          <li><a href="https://ahmet.im/blog/" title="has made a personal dashboard">Ahmet</a></li>
+        </ul>
+      </div>
     </div>
+    <script src="assets/js/app.js" charset="utf-8"></script>
   </body>
 </html>
